@@ -40,16 +40,40 @@
 
 # 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
 
-def combine(string1, string2, string3)
-  return "#{string1} #{string2} #{string3}"
-end
+# def combine(string1, string2, string3)
+#   return "#{string1} #{string2} #{string3}"
+# end
 
-p combine("Baseball", "is", "awesome")
+# p combine("Baseball", "is", "awesome")
 
 # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
+# def number_to_string(number)
+#   return number.to_s
+# end
+
+# p number_to_string(5)
+
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
+
+# def repeat(string)
+#   return string * 5
+# end
+
+# p repeat("hello ")
 
 # 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
 
+# def average(number1, number2, number3)
+#   return (number1 + number2 + number3) / 3.0
+# end
+
+# p average(6, 10, 14)
+
 # 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+
+# def times_and_add(number)
+#   return number * 10 + 30
+# end
+
+# p times_and_add(5)
