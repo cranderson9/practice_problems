@@ -143,14 +143,103 @@
 
 # p cheapest_item
 
- 7. Start with an array of numbers and compute product of all the numbers.
-    For example, [5, 10, 8, 3] becomes 1200.
+#  7. Start with an array of numbers and compute product of all the numbers.
+#     For example, [5, 10, 8, 3] becomes 1200.
+
+# numbers = [5, 10, 8, 3]
+# product = 1
+# i = 0
+
+# while i < numbers.length
+#   product = product * numbers[i]
+#   i += 1
+# end
+
+# p product
+
+# numbers = [5, 10, 8, 3]
+# product = 1
+
+# numbers.each do |number|
+#   product = product * number
+# end
+
+# p product
 
 #  8. Start with an array of strings and combine them all into a single string, separated by dashes.
 #     For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
 
+# sports = ["volleyball", "basketball", "badminton"]
+# combined_sports = "-"
+# i = 0
+
+# while i < sports.length
+#   sport = sports[i]
+#   combined_sports += "#{sport}-"
+#   i += 1
+# end
+
+# p combined_sports
+
+# sports = ["volleyball", "basketball", "badminton"]
+# combined_sports = "-"
+
+# sports.each do |sport|
+#   combined_sports += "#{sport}-"
+# end
+
+# p combined_sports
+
 #  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
 
+# items = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# i = 0
+# shortest_name = items[i]
+
+# while i < items.length
+#   if items[i][:name].length < shortest_name[:name].length
+#     shortest_name = items[i]
+#   end
+#   i += 1
+# end
+
+# p shortest_name
+
+# items = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# shortest_name = items[0]
+
+# items.each do |item|
+#   if item[:name].length < shortest_name[:name].length
+#     shortest_name = item
+#   end
+# end
+
+# p shortest_name
+
 # 10. Start with an array of numbers and compute the maximum number.
 #     For example, [5, 10, 8, 3] becomes 10.
+
+# numbers = [5, 10, 8, 3]
+# maximum = numbers[0]
+# i = 0
+
+# while i < numbers.length
+#   if numbers[i] > maximum
+#     maximum = numbers[i]
+#   end
+#   i += 1
+# end
+
+# p maximum
+
+# numbers = [5, 10, 8, 3]
+# maximum = numbers[0]
+
+# numbers.each do |number|
+#   if number > maximum
+#     maximum = number
+#   end
+# end
+
+# p maximum
