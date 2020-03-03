@@ -104,6 +104,27 @@
 #  6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
 #     For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
 
+# create a blank array to shovel sums into
+# create loop that loops through the first array
+# grab value from fist array and loop through second array adding it to each value
+# grab second value from first array and loop through second array adding it to each value
+
+numbers1 = [1, 2]
+numbers2 = [6, 7, 8]
+sums = []
+i1 = 0
+
+while i1 < numbers1.length
+  i2 = 0
+  while i2 < numbers2.length
+    sums << numbers1[i1] + numbers2[i2]
+    i2 += 1
+  end
+  i1 += 1
+end
+
+p sums
+
 #  7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
 #     For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
 
