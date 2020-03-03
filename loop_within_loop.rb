@@ -109,24 +109,44 @@
 # grab value from fist array and loop through second array adding it to each value
 # grab second value from first array and loop through second array adding it to each value
 
-numbers1 = [1, 2]
-numbers2 = [6, 7, 8]
-sums = []
-i1 = 0
+# numbers1 = [1, 2]
+# numbers2 = [6, 7, 8]
+# number_sums = []
+# i1 = 0
 
-while i1 < numbers1.length
-  i2 = 0
-  while i2 < numbers2.length
-    sums << numbers1[i1] + numbers2[i2]
-    i2 += 1
-  end
-  i1 += 1
-end
+# while i1 < numbers1.length
+#   i2 = 0
+#   while i2 < numbers2.length
+#     number_sums << numbers1[i1] + numbers2[i2]
+#     i2 += 1
+#   end
+#   i1 += 1
+# end
 
-p sums
+# p number_sums
 
 #  7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
 #     For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
+
+# create new array to shovel into
+# grab first value of array
+# write loop to multiply that value by each number in the area
+# loop through the other numbers in the array doing the same thing
+
+# numbers = [2, 8, 3]
+# products = []
+# i1 = 0
+
+# while i1 < numbers.length
+#   i2 = 0
+#   while i2 < numbers.length
+#     products << numbers[i1] * numbers[i2]
+#     i2 += 1
+#   end
+#   i1 += 1
+# end
+
+# p products
 
 #  8. Use a nested loop to find the largest sum of any two different numbers within an array.
 #     For example, [1, 8, 3, 10] becomes 18.
