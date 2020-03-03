@@ -150,6 +150,29 @@
 
 #  8. Use a nested loop to find the largest sum of any two different numbers within an array.
 #     For example, [1, 8, 3, 10] becomes 18.
+# set a value for the first numbers in the array added together as the largest sum
+# loop through adding the first value in the array to every other number in the array
+# each time the sum will be compared to the largeset sum and become the largest sum if it is greater
+# Need if statement so the same values in the array don't get added together
+
+# numbers = [1, 8, 3, 10]
+# largest_sum = numbers[0] + numbers[1]
+# i1 = 0
+# while i1 < numbers.length
+#   i2 = 0
+#   while i2 < numbers.length
+#     if i1 != i2
+#       sum = numbers[i1] + numbers[i2]
+#       if sum > largest_sum
+#         largest_sum = sum
+#       end
+#     end
+#     i2 += 1
+#   end
+#   i1 += 1
+# end
+
+# p largest_sum
 
 #  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 #     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
