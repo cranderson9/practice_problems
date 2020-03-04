@@ -206,3 +206,24 @@
 
 # 10. Use a nested loop to convert an array of string arrays into a single string.
 #     For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
+
+# create empty array
+# set index1 to 0
+# grab the first array and the first value and shovel it in the array
+# write loop that shovels the rest of the objects in that array into the new array
+# write an outside loop that shovels in the rest of the arrays the same as the first
+
+# string_pairs = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
+# strings_combined = ""
+# i1 = 0
+
+# while i1 < string_pairs.length
+#   i2 = 0
+#   while i2 < string_pairs[i1].length
+#     strings_combined << string_pairs[i1][i2]
+#     i2 += 1
+#   end
+#   i1 += 1
+# end
+
+# p strings_combined
