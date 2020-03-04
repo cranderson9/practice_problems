@@ -17,7 +17,7 @@
 # pairs = [[1, 3], [8, 9], [2, 16]]
 # pairs_hash = {}
 
-# pairs.each do |pair|
+# pairs.map do |pair|
 #   key = pair[0]
 #   value = pair[1]
 #   pairs_hash[key] = value
@@ -42,7 +42,7 @@
 # items = [{ id: 1, color: "blue", price: 32 }, { id: 2, color: "red", price: 12 }]
 # id_hash = {}
 
-# items.each do |item|
+# items.map do |item|
 #   key = item[:id]
 #   value = item
 #   id_hash[key] = item
@@ -71,14 +71,14 @@
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
 
-# household_items = { "chair" => 100, "book" => 14 }
-# new_array = []
+household_items = { "chair" => 100, "book" => 14 }
+new_array = []
 
-# household_items.each do |name, price|
-#   new_array << [name, price]
-# end
+household_items.map do |name, price|
+  new_array << [name, price]
+end
 
-# p new_array
+p new_array
 
 #  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
 #     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
