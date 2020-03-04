@@ -177,5 +177,32 @@
 #  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 #     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
 
+# make empty
+# set value for sum of adding together first two items in array
+# set index to first value in array and loop through it to add it with all of values
+# outside loop will loop through the rest of the array
+# need an if statement for if the sum of the numbers = 10 that it will shovel in the two numbers
+# also need if statement so that values the same don't add together
+
+# numbers = [2, 5, 3, 1, 0, 7, 11]
+# i1 = 0
+# add_to_10 = []
+
+# while i1 < numbers.length
+#   i2 = 0
+#   while i2 < numbers.length
+#     if i1 != i2
+#       sum = numbers[i1] + numbers[i2]
+#       if sum == 10
+#         add_to_10 << numbers[i1]
+#       end
+#     end
+#     i2 += 1
+#   end
+#   i1 += 1
+# end
+
+# p add_to_10
+
 # 10. Use a nested loop to convert an array of string arrays into a single string.
 #     For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
