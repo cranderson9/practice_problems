@@ -137,26 +137,47 @@
 
 
 
-price_hash = {"chair" => 75, "book" => 15}  
-items = [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}]
-combined_hash = {}
-i = 0
+# price_hash = {"chair" => 75, "book" => 15}  
+# items = [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}]
+# combined_hash = {}
+# i = 0
 
-while i < items.length
-  item = items[i]
-  name = item[:name]
-  color = item[:color]
-  weight = item[:weight]
-  price = price_hash[name]
-  combined_hash[name] = {price: price, color: color, weight: weight}
-  i += 1
-end
+# while i < items.length
+#   item = items[i]
+#   name = item[:name]
+#   color = item[:color]
+#   weight = item[:weight]
+#   price = price_hash[name]
+#   combined_hash[name] = {price: price, color: color, weight: weight}
+#   i += 1
+# end
 
-p items[0]
-p combined_hash
+# p combined_hash
 
 #  9. Convert an array of hashes into a hash of arrays, using the author as keys and the titles as values.
 #     For example, [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}] becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
+
+books = [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}] 
+books_hash = {}
+#write an outside loop that starts with the first hash
+# make book variable so you can use this variable in all of the hashes
+#make variables author and title so they can be used in all the hashes
+# Then reset the variable books_hash to the author and title
+# loop through adding the other books in the array
+i = 0
+
+while i < books.length
+  book = books[i]
+  author = books[i][:author]
+  title = books[i][:title]
+  if books_hash[author] == nil
+    books_hash[author] = []
+  end
+  books_hash[author] << title
+  i += 1
+end
+
+p books_hash
 
 # 10. Given a hash, create a new hash that has the keys and values switched.
 #     For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
