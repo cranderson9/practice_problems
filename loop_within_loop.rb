@@ -46,6 +46,25 @@
 #  3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 #     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
 
+# create a new blank array
+# grab the first value in the array and write a loop that moves through the array adding it to every other value in the array. Then shovel the arrays into the blank array
+# create an inside loop that moves it through each value in the array. In this inside loop there will need to be an if statement that it should only add them if they are not the same.
+
+letters = ["a", "b", "c", "d"]
+letter_combos = []
+i1 = 0
+while i1 < letters.length
+  i2 = 0
+  while i2 < letters.length
+    if i1 != i2
+      letter_combos << letters[i1] + letters[i2]
+    end
+    i2 += 1
+  end
+  i1 += 1
+end
+p letter_combos
+
 #  4. Use a nested loop to find the largest product of any two different numbers within a given array.
 #     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
 
