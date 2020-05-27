@@ -181,28 +181,28 @@
 
 # p combined_sports
 
-# sports = ["volleyball", "basketball", "badminton"]
-# combined_sports = "-"
+sports = ["volleyball", "basketball", "badminton"]
+combined_sports = "-"
 
-# sports.each do |sport|
-#   combined_sports += "#{sport}-"
-# end
+sports.each do |sport|
+  combined_sports += "#{sport}-"
+end
 
 # p combined_sports
 
 #  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
 
-# items = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
-# i = 0
-# shortest_name = items[i]
+items = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+i = 0
+shortest_name = items[i]
 
-# while i < items.length
-#   if items[i][:name].length < shortest_name[:name].length
-#     shortest_name = items[i]
-#   end
-#   i += 1
-# end
+while i < items.length
+  if items[i][:name].length < shortest_name[:name].length
+    shortest_name = items[i]
+  end
+  i += 1
+end
 
 # p shortest_name
 
