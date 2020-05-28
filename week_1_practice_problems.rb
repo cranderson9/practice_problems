@@ -8,21 +8,30 @@ numbers.length.times do
   sum = sum + number
   index = index + 1
 end
-p sum
+# p sum
 
 numbers = [1, 2, 4, 2]
 sum = 0
 numbers.each do |number|
   sum = sum + number
 end
-p sum
+# p sum
 
 
 
 
 # Write a method called `double_numbers` that takes in an array and returns a new array with each number doubled. Use an `each` loop in the method.
 
-# p double_numbers([4, 1, 3])  #=> [8, 2, 6]
+def double_numbers(array)
+  doubled_numbers = []
+  array.each do |number|
+    # number= number * 2
+    doubled_numbers << number * 2
+  end
+  return doubled_numbers
+end
+
+p double_numbers([4, 1, 3])  #=> [8, 2, 6]
 
 
 # Read about the Ruby `while` loop. Then refactor the code below using `while`. *Warning* - a `while` loop will run forever if you write it incorrectly (unlike a `times` loop or an `each` loop). You can enter Ctrl C in your terminal to force Ruby to quit if it’s stuck in an infinite loop.
@@ -35,7 +44,17 @@ numbers.length.times do
   sum = sum + number
   index = index + 1
 end
-# p sum
+p sum
+
+numbers = [1, 2, 4, 2]
+sum = 0
+index = 0
+while index < numbers.length
+  number = numbers[index]
+  sum = sum + number
+  index += 1
+end
+p sum
 
 
 # The following code will run 100 times, and each time it will ask the user for their name. The code will break early if the user’s name is Bob.
