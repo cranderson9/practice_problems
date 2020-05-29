@@ -25,7 +25,6 @@ end
 def double_numbers(array)
   doubled_numbers = []
   array.each do |number|
-    # number= number * 2
     doubled_numbers << number * 2
   end
   return doubled_numbers
@@ -70,6 +69,18 @@ p sum
 # puts "Hi, Bob!"
 
 # Rewrite the code using a while loop so the program will run *forever* unless the user enters a name of Bob.
+
+i = 0
+while i < 100
+  puts "What is your name"
+  name = gets.chomp
+  if name.downcase == "bob"
+    break
+  end
+  i += 1
+end
+
+puts "Hi Bob"
 
 # Write a method called `average` that takes in an array of numbers and returns the average (the sum divided by the total number of numbers). Write it first using a `while` loop, then write it again using an `each` loop. (Hint - if you’re having issues with missing decimals, you may need the .to_f method…)
 
