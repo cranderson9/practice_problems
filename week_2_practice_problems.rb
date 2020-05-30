@@ -50,12 +50,23 @@ fruits.map do |fruit|
   color = fruit["color"]
   fruits_hash[name] = color
 end
-p fruits_hash
+# p fruits_hash
 
 
 #4 Write a method called `reverse_a_string` that accepts a string as a parameter and returns the reverse. The one caveat: Don't use the reverse method that already comes with Ruby!
 
-# p reverse_a_string("abcde")  #=> "edcba"
+def reverse_a_string(letters)
+  letters_length = letters.length
+  letters_reversed = ""
+  i = letters_length-1
+  while i >=0 do
+    letters_reversed << letters[i]
+    i = i-1
+  end
+  return letters_reversed
+end
+
+p reverse_a_string("abcde")  #=> "edcba"
 
 
 #5 Write a method called `find_longest_word`, which will accept a string as a parameter (usually a sentence), and return another string that will be the longest word in that sentence.
