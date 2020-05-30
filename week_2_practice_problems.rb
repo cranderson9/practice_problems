@@ -28,7 +28,7 @@ item_ids = []
 items.map do |item|
   item_ids << item[:id]
 end
-p item_ids
+# p item_ids
 
 
 
@@ -39,17 +39,25 @@ fruits = [
   {"name" => "banana", "color" => "yellow"},
   {"name" => "grape", "color" => "purple"}
 ]
-
-#4 into a single hash where the keys are the names and the values are the colors. The result should look like:
+#  into a single hash where the keys are the names and the values are the colors. The result should look like:
 
 {"apple" => "red", "banana" => "yellow", "grape" => "purple"}
 
+fruits_hash = {}
 
-#5 Write a method called `reverse_a_string` that accepts a string as a parameter and returns the reverse. The one caveat: Don't use the reverse method that already comes with Ruby!
+fruits.map do |fruit|
+  name = fruit["name"]
+  color = fruit["color"]
+  fruits_hash[name] = color
+end
+p fruits_hash
+
+
+#4 Write a method called `reverse_a_string` that accepts a string as a parameter and returns the reverse. The one caveat: Don't use the reverse method that already comes with Ruby!
 
 # p reverse_a_string("abcde")  #=> "edcba"
 
 
-#6 Write a method called `find_longest_word`, which will accept a string as a parameter (usually a sentence), and return another string that will be the longest word in that sentence.
+#5 Write a method called `find_longest_word`, which will accept a string as a parameter (usually a sentence), and return another string that will be the longest word in that sentence.
 
 # p find_longest_word("What is the longest word in this phrase?")  #=> "longest"
