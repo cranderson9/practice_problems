@@ -5,14 +5,14 @@ doubled_numbers = []
 numbers.each do |number|
   doubled_numbers << number * 2
 end
-p doubled_numbers
+# p doubled_numbers
 
 numbers = [1, 2, 4, 2]
 doubled_numbers = []
 numbers.map do |number|
   doubled_numbers << number * 2
 end
-p doubled_numbers
+# p doubled_numbers
 
 #2 Use the `map` method to convert the array of hashes
 
@@ -21,10 +21,14 @@ items = [
   {id: 2, body: 'bar'},
   {id: 3, body: 'foobar'}
 ]
-
 # into an array that only contains the ids. The result should look like:
-
 [1, 2, 3]
+
+item_ids = []
+items.map do |item|
+  item_ids << item[:id]
+end
+p item_ids
 
 
 
